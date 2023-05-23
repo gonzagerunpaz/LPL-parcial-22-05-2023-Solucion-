@@ -3,6 +3,4 @@
 ## DNI: 42886703
 
 ### Consideraciones especiales:
-- 
-- 
-- 
+- No pude validar fecha ni formato en reservas.

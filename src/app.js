@@ -1,13 +1,15 @@
 const express = require('express');
-const app = express()
+const app = express();
 const PORT = process.env.PORT || 3000;
 
-const { vehiculosRouter } = require('./routes/vehiculosRoutes');
-const { reservasRouter } = require('./routes/reservasRoutes');
+const { vehiculosRoutes } = require('./routes/vehiculosRoutes');
+const { reservasRoutes } = require('./routes/reservasRoutes');
 
-app.use(express.json())
+app.use(express.json());
 
-app.use("/api/vehiculos", vehiculosRouter);
-app.use("/api/reservas", reservasRouter);
+app.use("/api/vehiculos", vehiculosRoutes);
+app.use("/api/reservas", reservasRoutes);
 
-app.listen(PORT, ()=>{console.log(`App lista escuhando en el puerto ${PORT}`)} )
+app.listen(PORT, () => {
+  console.log(`App lista escuchando en el puerto ${PORT}`);
+});
