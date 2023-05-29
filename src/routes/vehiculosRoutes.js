@@ -1,7 +1,6 @@
 const express = require('express')
 const { getAllVehiculos, 
-        getVehiculoByPatente, 
-        deleteVehiculoByPatente, 
+        getVehiculoByPatente,
         createVehiculo, 
         updateVehiculo 
 } = require('../controllers/vehiculosControllers')
@@ -13,4 +12,4 @@ vehiculosRoutes.get('/:patente', getVehiculoByPatente)
 vehiculosRoutes.post('/', createVehiculo)
 vehiculosRoutes.put('/:patente', updateVehiculo)
 
-module.exports = { vehiculosRoutes }
+module.exports = vehiculosRoutes 

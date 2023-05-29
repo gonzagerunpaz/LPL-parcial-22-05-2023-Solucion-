@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const { vehiculosRoutes } = require('./routes/vehiculosRoutes');
+const vehiculosRoutes  = require('./routes/vehiculosRoutes');
 const { reservasRoutes } = require('./routes/reservasRoutes');
 
 app.use(express.json());
